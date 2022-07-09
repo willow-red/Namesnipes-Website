@@ -141,3 +141,12 @@ hr{
 img{
   height: 100% !important;
 }
+#growthTracker:hover{
+  content: url("assets/GrowthTracker.gif");
+}
+#tetris:hover{
+  content: url("assets/tetris.gif");
+}
+#histress:hover{
+  content: url("assets/histress.gif");
+}
