@@ -1,0 +1,67 @@
+body{
+  font-family: sans-serif;
+  background-color: #272738;
+}
+#content{
+  background-color: #272738;
+  padding: 80px 50px;
+}
+#sidebar a{
+  font-size: 25px;
+  line-height: 40px;
+  color: #F96F5C;
+  text-decoration: none;
+}
+#scrollableArea{
+  background-color: none;
+  padding: 0px;
+}
+#intro{
+  background-color: none;
+  margin: 0px;
+  color: #F96F5C;
+}
+#intro h1{
+  font-size: 100px;
+}
+#intro h2{
+  font-size: 70px;
+}
+#intro h3{
+  font-size: 25px;
+}
+#projects{
+  background-color: none;
+}
+.header{
+  color: #F96F5C;
+  font-size: 40px;
+}
+hr{
+  color: #F96F5C;
+}
+.projectDisplay{
+  background-color: none;
+  margin-top: 60px;
+}
+.projectHeader{
+  color: #F96F5C;
+}
+.projectSummary{
+  color: #d1d1e6;
+}
+.projectText{
+  background-color: none;
+  padding: 15px;
+}
+.summaryBox{
+  background-color: #36364d;
+  padding: 15px;
+  border-radius: 4px;
+}
+.techUsed{
+  font-family: monospace;
+  color: #F96F5C;
+  font-size: 12px;
+  padding-top: 15px;
+}

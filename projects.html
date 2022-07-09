@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- metatags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="NameSnipes portfolio website">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Programming, Coding, Namesnipes">
+    <meta name="author" content="Beck Corkle">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Namesnipes</title>
+  </head>
+
+  <body>
+    <!--main container-->
+    <div class="container" id="content">
+      <!--main content "row"-->
+      <div class="row">
+        <!--sidebar(removed on smaller screens)-->
+        <div class="d-none d-sm-none d-md-none d-lg-block col-lg-2 col-xl-2" id="sidebar">
+          <div class="row">
+            <a href="index.html">> home</a>
+          </div>
+          <div class="row">
+            <a href="projects.html">> projects</a>
+          </div>
+          <div class="row">
+            <a href="#">> about</a>
+          </div>
+        </div>
+        <!--scrollable area-->
+        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9" id="scrollableArea">
+          <!--projects-->
+          <div id="projects">
+            <p class="header">> projects</p>
+            <hr>
+
+            <!--project display thing-->
+            <div class="row projectDisplay">
+              <img src="assets/pic.png" class="img-fluid col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7" alt="a project">
+              <div class="projectText text-end col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                <h2 class="projectHeader">Project Name</h2>
+                <div class="summaryBox">
+                  <p class="projectSummary">My slave human didn't give me any food so i pooped on the floor steal the warm chair
+                    right after you get up. Grab pompom in mouth and put in water dish your pillow is now my pet bed leave hair
+                    everywhere chill on the couch table but cat not kitten around , cat mojo.</p>
+                </div>
+                <div class="techUsed">
+                  <p>javascript, python, java, html, css</p>
+                </div>
+              </div>
+          </div>
+          <!--left-->
+          <div class="row projectDisplay">
+            <div class="projectText text-start col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+              <h2 class="projectHeader">Project Name</h2>
+              <div class="summaryBox">
+                <p class="projectSummary">My slave human didn't give me any food so i pooped on the floor steal the warm chair
+                  right after you get up. Grab pompom in mouth and put in water dish your pillow is now my pet bed leave hair
+                  everywhere chill on the couch table but cat not kitten around , cat mojo.</p>
+              </div>
+              <div class="techUsed">
+                <p>javascript, python, java, html, css</p>
+              </div>
+            </div>
+            <img src="assets/pic.png" class="img-fluid col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7" alt="a project">
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
