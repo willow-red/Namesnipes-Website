@@ -10,7 +10,9 @@
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
     rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
+    <!--slide in plugin-->
+    <link href="assets/slide-in/common.css" rel="stylesheet">
+    <!--main style sheet-->
     <link rel="stylesheet" href="style.css">
     <title>Namesnipes</title>
   </head>
@@ -20,27 +22,27 @@
     <div class="container" id="content">
       <!--main content "row"-->
       <div class="row">
-        <!--sidebar(removed on smaller screens)-->
-        <div class="d-none d-sm-none d-md-none d-lg-block col-lg-2 col-xl-2" id="sidebar">
-          <div class="row">
-            <a href="index.html">> home</a>
+        <!--sidebar(made horizontal for smaller screens)-->
+        <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2" id="sidebar">
+          <div class="row d-inline-block d-lg-block sidebarItem">
+            <a href="index.html">>home&nbsp;&nbsp;&nbsp;&nbsp;</a>
           </div>
-          <div class="row">
-            <a href="projects.html">> projects</a>
+          <div class="row d-inline-block d-lg-block sidebarItem">
+            <a href="projects.html">>projects&nbsp;&nbsp;&nbsp;&nbsp;</a>
           </div>
-          <div class="row">
-            <a href="#">> about</a>
+          <div class="row d-inline-block d-lg-block sidebarItem">
+            <a href="#">>about</a>
           </div>
         </div>
         <!--scrollable area-->
-        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9" id="scrollableArea">
-          <!--projects-->
+        <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10" id="scrollableArea">
+          <!--projects header-->
           <div id="projects">
             <p class="header">> projects</p>
             <hr>
-
             <!--project display thing-->
-            <div class="row projectDisplay">
+            <div class="row projectDisplay u-fade-type-right js-scroll-trigger">
+              <!--must size all images to be the same width-->
               <img src="assets/pic.png" class="img-fluid col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7" alt="a project">
               <div class="projectText text-end col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
                 <h2 class="projectHeader">Project Name</h2>
@@ -52,10 +54,14 @@
                 <div class="techUsed">
                   <p>javascript, python, java, html, css</p>
                 </div>
+                <div class="projectLinks">
+                  <a class="projectIcon github" href="https://github.com/Namesnipes/Growth-Tracker" target="_blank"></a>
+                  <a class="projectIcon website" href="https://addons.mozilla.org/en-US/firefox/addon/growth-tracker/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search" target="_blank"></a>
+                </div>
               </div>
           </div>
           <!--left-->
-          <div class="row projectDisplay">
+          <div class="row projectDisplay u-fade-type-left js-scroll-trigger">
             <div class="projectText text-start col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
               <h2 class="projectHeader">Project Name</h2>
               <div class="summaryBox">
@@ -66,11 +72,15 @@
               <div class="techUsed">
                 <p>javascript, python, java, html, css</p>
               </div>
+              <div class="projectLinks">
+                <a class="projectIcon github" href="https://github.com/Namesnipes/Growth-Tracker" target="_blank"></a>
+                <a class="projectIcon website" href="https://addons.mozilla.org/en-US/firefox/addon/growth-tracker/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search" target="_blank"></a>
+              </div>
             </div>
             <img src="assets/pic.png" class="img-fluid col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7" alt="a project">
         </div>
         <!--right-->
-        <div class="row projectDisplay">
+        <div class="row projectDisplay u-fade-type-right js-scroll-trigger">
           <img src="assets/pic.png" class="img-fluid col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7" alt="a project">
           <div class="projectText text-end col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
             <h2 class="projectHeader">Project Name</h2>
@@ -82,6 +92,10 @@
             <div class="techUsed">
               <p>javascript, python, java, html, css</p>
             </div>
+            <div class="projectLinks">
+              <a class="projectIcon github" href="https://github.com/Namesnipes/Growth-Tracker" target="_blank"></a>
+              <a class="projectIcon website" href="https://addons.mozilla.org/en-US/firefox/addon/growth-tracker/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search" target="_blank"></a>
+            </div>
           </div>
       </div>
 
@@ -89,11 +103,13 @@
       </div>
     </div>
 
-
-
-
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!--bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!--slide in plugin-->
+    <script src="assets/slide-in/script.js"></script>
+
   </body>
 </html>
