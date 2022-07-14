@@ -138,15 +138,20 @@ hr{
   transform: translate(0, -3px);
   background-image: url("assets/linkHover.png");
 }
-img{
-  height: 100% !important;
+.imageGif{
+  display: none;
 }
-#growthTracker:hover{
-  content: url("assets/GrowthTracker.gif");
+.stillImage{
+  display: block;
 }
-#tetris:hover{
-  content: url("assets/tetris.gif");
+.projectImage:hover .imageGif{
+  display: block;
 }
-#histress:hover{
-  content: url("assets/histress.gif");
+.projectImage:hover .stillImage{
+  display: none;
+}
+#aboutText{
+  font-size: 20px;
+  color: #d1d1e6;
+  font-weight: normal;
 }
