@@ -25,24 +25,36 @@
         <!--sidebar(made horizontal for smaller screens)-->
         <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2" id="sidebar">
           <div class="row d-inline-block d-lg-block sidebarItem">
-            <a href="index.html">>home&nbsp;&nbsp;&nbsp;</a>
+            <a href="index.html">>home&nbsp;&nbsp;</a>
           </div>
           <div class="row d-inline-block d-lg-block sidebarItem">
-            <a href="projects.html">>projects&nbsp;&nbsp;&nbsp;</a>
+            <a href="projects.html">>projects&nbsp;&nbsp;</a>
           </div>
           <div class="row d-inline-block d-lg-block sidebarItem">
             <a href="about.html">>about</a>
           </div>
         </div>
         <!--scrollable area-->
-        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9" id="scrollableArea">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 u-fade-type-down js-window-trigger" id="scrollableArea">
           <!--intro/home section-->
-          <div class="text-center text-sm-center text-md-center text-lg-end text-xl-end u-fade-type-down js-window-trigger" id="intro">
-            <!--TODO make font responsive-->
+          <div class="text-center text-sm-center text-md-center text-lg-end text-xl-end" id="intro">
             <h1>hi, I'm Beck</h1>
-            <h2>I like coding</h2>
-            <h3>Programmer, Developer, Computer Science Student, Cat Owner</h3>
+            <div id="typed-strings">
+              <p>programmer</p>
+              <p>developer</p>
+              <p>cs student</p>
+              <p>cat owner</p>
+            </div>
+            <span id="typed"></span>
           </div>
+          <a href="mailto:corklebeck@gmail.com" class="d-flex justify-content-center justify-content-lg-end">
+            <div id="contactme">
+              <div id="contactText">
+                <div id="emailContact"></div>
+                <p>contact me</p>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -54,6 +66,17 @@
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <!--slide in plugin-->
     <script src="assets/slide-in/script.js"></script>
+    <!--type thing-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('#typed', {
+          stringsElement: '#typed-strings',
+          backSpeed: 50,
+          typeSpeed: 50,
+          loop: true,
+          backDelay: 2000,
+        });
+    </script>
 
   </body>
 </html>
